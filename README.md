@@ -1,4 +1,4 @@
 org.geppetto.simulator.moonorbit
 ================================
 
-Geppetto simulator bundle
+Working on Geppetto simulator bundle for gravitational slingshot (ala Luna 3) simulation.
