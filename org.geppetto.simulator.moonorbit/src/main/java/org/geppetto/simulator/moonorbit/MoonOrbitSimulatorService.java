@@ -5,7 +5,9 @@ import org.geppetto.core.common.GeppettoExecutionException;
 import org.geppetto.core.common.GeppettoInitializationException;
 import org.geppetto.core.data.model.VariableList;
 import org.geppetto.core.model.IModel;
+import org.geppetto.core.model.state.SimpleStateNode;
 import org.geppetto.core.model.state.StateTreeRoot;
+import org.geppetto.core.model.values.DoubleValue;
 import org.geppetto.core.simulation.IRunConfiguration;
 import org.geppetto.core.simulation.ISimulatorCallbackListener;
 import org.geppetto.core.simulator.ASimulator;
@@ -19,15 +21,18 @@ public class MoonOrbitSimulatorService extends ASimulator {
 	private static Log logger = LogFactory.getLog(MoonOrbitSimulatorService.class);
 
 	private MoonOrbitModel _moonOrbit;
-
-	private ISimulatorCallbackListener _listener;
 	
 	private StateTreeRoot _stateTree=new StateTreeRoot("MO");
 	
 	@Override
 	public void simulate(IRunConfiguration runConfiguration) throws GeppettoExecutionException
 	{
-		_listener.stateTreeUpdated(_stateTree);
+		try {
+			((SimpleStateNode)_stateTree.getChildren().get(0)).addValue(new DoubleValue(0d));
+			getListener().stateTreeUpdated(_stateTree);
+		} catch (GeppettoExecutionException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -35,7 +40,9 @@ public class MoonOrbitSimulatorService extends ASimulator {
 	{
 		super.initialize(model, listener);
 		_moonOrbit=(MoonOrbitModel) model;
-		_listener=listener;
+		_stateTree.addChild(new SimpleStateNode("dummy"));
+		((SimpleStateNode)_stateTree.getChildren().get(0)).addValue(new DoubleValue(0d));
+		getListener().stateTreeUpdated(_stateTree);
 	}
 
 	@Override

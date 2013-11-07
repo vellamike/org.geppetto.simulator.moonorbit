@@ -115,7 +115,7 @@ public class MoonOrbitModelInterpreter implements IModelInterpreter
 		space.getGeometries().add(earth);
 		space.getGeometries().add(luna3);
 		s.getEntities().add(space);
-		return null;
+		return s;
 	}
 
 	/**

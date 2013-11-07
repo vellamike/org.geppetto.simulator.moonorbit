@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1383842991548
+Bnd-LastModified: 1383845007128
 Build-Jdk: 1.7.0_21
 Built-By: matteocantarelli
 Bundle-ClassPath: .
@@ -11,15 +11,17 @@ Created-By: Apache Maven Bundle Plugin
 Export-Package: org.geppetto.simulator.moonorbit;uses:="org.geppetto.cor
  e.model,org.geppetto.simulator.moonorbit.model,org.geppetto.core.model.
  state,org.geppetto.core.visualisation.model,org.springframework.stereot
- ype,com.google.gson,org.geppetto.core.simulation,org.geppetto.core.data
- .model,org.apache.commons.logging,org.geppetto.core.common,org.geppetto
- .core.simulator";version="0.0.1",org.geppetto.simulator.moonorbit.model
- ;uses:="org.geppetto.core.model";version="0.0.1"
+ ype,com.google.gson,org.geppetto.core.simulation,org.geppetto.core.mode
+ l.values,org.geppetto.core.data.model,org.apache.commons.logging,org.ge
+ ppetto.core.common,org.geppetto.core.simulator";version="0.0.1",org.gep
+ petto.simulator.moonorbit.model;uses:="org.geppetto.core.model";version
+ ="0.0.1"
 Import-Package: com.google.gson;version="[2.2,3)",org.apache.commons.log
  ging;version="[1.1,2)",org.geppetto.core.common;version="[0.0,1)",org.g
  eppetto.core.data.model;version="[0.0,1)",org.geppetto.core.model;versi
  on="[0.0,1)",org.geppetto.core.model.state;version="[0.0,1)",org.geppet
- to.core.simulation;version="[0.0,1)",org.geppetto.core.simulator;versio
- n="[0.0,1)",org.geppetto.core.visualisation.model;version="[0.0,1)",org
- .springframework.stereotype;version="[3.0,4)"
+ to.core.model.values;version="[0.0,1)",org.geppetto.core.simulation;ver
+ sion="[0.0,1)",org.geppetto.core.simulator;version="[0.0,1)",org.geppet
+ to.core.visualisation.model;version="[0.0,1)",org.springframework.stere
+ otype;version="[3.0,4)"
 Tool: Bnd-1.50.0
