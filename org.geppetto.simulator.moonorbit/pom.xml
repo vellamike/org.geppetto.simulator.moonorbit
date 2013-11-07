@@ -89,24 +89,12 @@
 		<dependency>
 			<groupId>org.geppetto</groupId>
 			<artifactId>core</artifactId>
-			<version>0.0.3</version>
+			<version>0.0.6</version>
 		</dependency>
 		<dependency>
-			<groupId>com.sun.xml.bind</groupId>
-			<artifactId>jaxb-impl</artifactId>
-			<version>2.1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.geppetto</groupId>
-			<artifactId>simulator.sph</artifactId>
-			<version>0.0.3</version>
-			<type>bundle</type>
-		</dependency>
-		<dependency>
-			<groupId>org.geppetto</groupId>
-			<artifactId>solver.sph</artifactId>
-			<version>0.0.3</version>
-			<type>bundle</type>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20131018</version>
 		</dependency>
 	</dependencies>
 
