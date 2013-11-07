@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1383839929880
+Bnd-LastModified: 1383840456290
 Build-Jdk: 1.7.0_21
 Built-By: matteocantarelli
 Bundle-ClassPath: .
@@ -10,10 +10,10 @@ Bundle-Version: 0.0.1
 Created-By: Apache Maven Bundle Plugin
 Export-Package: org.geppetto.simulator.moonorbit;uses:="org.json,org.gep
  petto.core.model,org.geppetto.simulator.moonorbit.model,org.geppetto.co
- re.model.state,org.geppetto.core.visualisation.model,junit.framework,or
- g.junit,org.geppetto.core.simulation,org.geppetto.core.data.model,org.a
- pache.commons.logging,org.geppetto.core.common,org.geppetto.core.simula
- tor,org.springframework.stereotype";version="0.0.1",org.geppetto.simula
+ re.model.state,org.geppetto.core.visualisation.model,org.springframewor
+ k.stereotype,junit.framework,org.junit,org.geppetto.core.simulation,org
+ .geppetto.core.data.model,org.apache.commons.logging,org.geppetto.core.
+ common,org.geppetto.core.simulator";version="0.0.1",org.geppetto.simula
  tor.moonorbit.model;uses:="org.geppetto.core.model";version="0.0.1"
 Import-Package: junit.framework,org.apache.commons.logging;version="[1.1
  ,2)",org.geppetto.core.common;version="[0.0,1)",org.geppetto.core.data.
