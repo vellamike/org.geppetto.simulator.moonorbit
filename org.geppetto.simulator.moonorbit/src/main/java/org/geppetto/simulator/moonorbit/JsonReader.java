@@ -1,4 +1,4 @@
-package main.java.org.geppetto.simulator.moonorbit;
+package org.geppetto.simulator.moonorbit;
 
 import java.io.BufferedReader;
 import java.io.IOException;

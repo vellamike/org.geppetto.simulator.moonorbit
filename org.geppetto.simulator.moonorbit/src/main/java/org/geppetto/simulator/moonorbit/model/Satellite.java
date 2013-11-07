@@ -30,7 +30,7 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  *******************************************************************************/
-package main.java.org.geppetto.simulator.moonorbit.model;
+package org.geppetto.simulator.moonorbit.model;
 
 
 /**
@@ -42,7 +42,7 @@ public class Satellite
 	
 	Vector3D _position;
 	Vector3D _velocity;
-	float _mass;
+	double _mass;
 	
 	public Satellite(Vector3D position, Vector3D velocity, float mass)
 	{
@@ -51,6 +51,39 @@ public class Satellite
 		this._velocity = velocity;
 		this._mass = mass;
 	}
-	
 
+	public Satellite()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+	public double getMass()
+	{
+		return _mass;
+	}
+
+	public Vector3D getPosition()
+	{
+		return _position;
+	}
+	
+	public Vector3D getVelocity()
+	{
+		return _velocity;
+	}
+
+	public void setPosition(Vector3D position)
+	{
+		_position=position;
+	}
+
+	public void setVelocity(Vector3D velocity)
+	{
+		_velocity=velocity;
+	}
+
+	public void setMass(double mass)
+	{
+		_mass=mass;
+	}
 }

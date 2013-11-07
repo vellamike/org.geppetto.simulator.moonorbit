@@ -30,7 +30,7 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  *******************************************************************************/
-package main.java.org.geppetto.simulator.moonorbit.model;
+package org.geppetto.simulator.moonorbit.model;
 
 import org.geppetto.core.model.IModel;
 
@@ -40,11 +40,52 @@ import org.geppetto.core.model.IModel;
  */
 public class MoonOrbitModel implements IModel
 {
+	public MoonOrbitModel(Satellite moon, Satellite earth, Satellite luna3)
+	{
+		super();
+		this._moon = moon;
+		this._earth = earth;
+		this._luna3 = luna3;
+	}
 
-	Satellite _moon;
-	Satellite _earth;
-	Satellite _luna3;
-	
+	private Satellite _moon;
+	private Satellite _earth;
+	private Satellite _luna3;
+
+	public Satellite getMoon()
+	{
+		return _moon;
+	}
+
+
+	public void setMoon(Satellite moon)
+	{
+		this._moon = moon;
+	}
+
+
+	public Satellite getEarth()
+	{
+		return _earth;
+	}
+
+
+	public void setEarth(Satellite earth)
+	{
+		this._earth = earth;
+	}
+
+
+	public Satellite getLuna3()
+	{
+		return _luna3;
+	}
+
+
+	public void setLuna3(Satellite luna3)
+	{
+		this._luna3 = luna3;
+	}
 	
 	/* (non-Javadoc)
 	 * @see org.geppetto.core.model.IModel#getId()
@@ -52,8 +93,7 @@ public class MoonOrbitModel implements IModel
 	@Override
 	public String getId()
 	{
-		// TODO Auto-generated method stub
-		return null;
+		return "MO";
 	}
 
 }

@@ -30,7 +30,7 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  *******************************************************************************/
-package main.java.org.geppetto.simulator.moonorbit.model;
+package org.geppetto.simulator.moonorbit.model;
 
 /**
  * @author matteocantarelli
@@ -39,14 +39,29 @@ package main.java.org.geppetto.simulator.moonorbit.model;
 public class Vector3D
 {
 	
-	float _x,_y,_z;
+	double _x,_y,_z;
 
-	public Vector3D(float x, float y, float z)
+	public Vector3D(double x, double y, double z)
 	{
 		super();
 		this._x = x;
 		this._y = y;
 		this._z = z;
+	}
+
+	public double getX()
+	{
+		return _x;
+	}
+	
+	public double getY()
+	{
+		return _y;
+	}
+	
+	public double getZ()
+	{
+		return _z;
 	}
 
 }
