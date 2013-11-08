@@ -104,17 +104,21 @@ public class MoonOrbitModelInterpreter implements IModelInterpreter
 	{
 		MoonOrbitModel mo = (MoonOrbitModel) model;
 		Scene s = new Scene();
-		Entity space = new Entity();
+		Entity eMoon = new Entity();
 		Sphere moon = getSphereFromSatellite(mo.getMoon());
 		moon.setRadius(5d);
+		Entity eEarth = new Entity();
 		Sphere earth = getSphereFromSatellite(mo.getEarth());
 		earth.setRadius(10d);
+		Entity eLuna3 = new Entity();
 		Sphere luna3 = getSphereFromSatellite(mo.getLuna3());
 		luna3.setRadius(2d);
-		space.getGeometries().add(moon);
-		space.getGeometries().add(earth);
-		space.getGeometries().add(luna3);
-		s.getEntities().add(space);
+		eMoon.getGeometries().add(moon);
+		eEarth.getGeometries().add(earth);
+		eLuna3.getGeometries().add(luna3);
+		s.getEntities().add(eMoon);
+		s.getEntities().add(eEarth);
+		s.getEntities().add(eLuna3);
 		return s;
 	}
 

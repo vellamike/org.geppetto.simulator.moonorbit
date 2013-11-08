@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:simulation xmlns:tns="http://www.openworm.org/simulationSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openworm.org/simulationSchema ../../src/main/resources/schema/simulationSchema.xsd ">
+  <tns:configuration>
+    <tns:outputFormat>RAW</tns:outputFormat>
+  </tns:configuration>
+  <tns:aspects>
+    <tns:modelInterpreter>moonModelInterpreter</tns:modelInterpreter>
+    <tns:modelURL>https://raw.github.com/vellamike/org.geppetto.simulator.moonorbit/master/org.geppetto.simulator.moonorbit/src/main/java/resources/samplescenario.mo</tns:modelURL>
+    <tns:simulator>moonOrbitSimulator</tns:simulator>
+    <tns:id>example1</tns:id>
+  </tns:aspects>
+  <tns:name>example1</tns:name>
+</tns:simulation>
